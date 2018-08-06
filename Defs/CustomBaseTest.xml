@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <CustomFactionBase.CustomFactionBaseDef>
+    <defName>CustomFactionBaseTest</defName>
+    <faction>Pirate</faction>
+    <baseBuildings>
+xw  xw  xw  xw
+ xw  xw  xw  xw
+  xw  xw  xw  xw
+   xw  xw  xw  xw
+    </baseBuildings>
+    <substitutes>
+      <x>Wall</x>
+    </substitutes>
+    <extendedSubstitutes>
+      <li>
+        <symbol>w</symbol>
+        <building>Wall</building>
+        <stuff>Steel</stuff>
+      </li>
+    </extendedSubstitutes>
+  </CustomFactionBase.CustomFactionBaseDef>
+</Defs>

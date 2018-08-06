@@ -8,10 +8,10 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
-*/*.dll.config
-*/.vs
-*/bin
-*/obj
+**/*.dll.config
+**/.vs
+**/bin
+**/obj
 # Windows Installer files
 *.cab
 *.msi
