@@ -1,3 +1,4 @@
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -7,11 +8,10 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
-Assemblies/AlienRace.dll.config
-Source/*/.vs
-Source/*/bin
-Source/*/obj
-Source/*/packages
+*/*.dll.config
+*/.vs
+*/bin
+*/obj
 # Windows Installer files
 *.cab
 *.msi
@@ -49,3 +49,6 @@ Source/*/packages
 Network Trash Folder
 Temporary Items
 .apdisk
+*.zip
+*.ruleset
+*.pfx
