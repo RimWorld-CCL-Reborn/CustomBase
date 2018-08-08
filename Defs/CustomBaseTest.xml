@@ -4,10 +4,12 @@
     <defName>CustomFactionBaseTest</defName>
     <faction>Pirate</faction>
     <baseBuildings>
-xw  xw  xw  xw
- xw  xw  xw  xw
-  xw  xw  xw  xw
-   xw  xw  xw  xw
+      <li>
+xw
+xw
+wx
+ww
+      </li>
     </baseBuildings>
     <substitutes>
       <x>Wall</x>
