@@ -1,6 +1,7 @@
 ﻿namespace CustomFactionBase
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
     using Harmony;
     using RimWorld;
@@ -31,6 +32,7 @@
             {
                 if (!rs.Active(rp: rp)) continue;
                 rp.rect = rs.GetRect(rp: rp);
+                CleanRect(rect: rp.rect.ExpandedBy(dist: 5));
                 ReplaceFloor(rect: rp.rect.ExpandedBy(dist: 2), floor: TerrainDefOf.Concrete);
                 rs.GenerateBase(rp: rp);
                 
@@ -39,6 +41,15 @@
             }
             
             return true;
+        }
+
+        private static void CleanRect(CellRect rect)
+        {
+            foreach (IntVec3 intVec3 in rect)
+            {
+                List<Thing> list = intVec3.GetThingList(map: BaseGen.globalSettings.map);
+                while (list.Any()) list.First().Destroy();
+            }
         }
 
         public static void ReplaceFloor(CellRect rect, TerrainDef floor)
